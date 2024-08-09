@@ -24,12 +24,6 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
-  Deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          echo "🎉 The job was triggered by event: ${{ github.event_name }}"
-          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ."
-          echo "This is my secret ${{secrets.MY_SECRET}}."
+
 
       
